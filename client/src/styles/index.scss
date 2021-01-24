@@ -1,0 +1,71 @@
+@import "variables.scss";
+@import "fetch.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}
+//HEADER
+.header {
+  background-color: $background;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  @media (max-width: 768px) {
+    padding: 20px 10px;
+  }
+  &__title {
+    color: #fff;
+    font-size: 46px;
+    font-weight: 900;
+    text-shadow: $shadow_3d;
+    @media (max-width: 1012px) {
+      font-size: 30px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+    }
+  }
+  &__nav {
+    display: flex;
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }
+}
+
+
+//FOOTER
+.footer {
+  background-color: $background;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  &__copyright {
+    color: #fff;
+    .year {
+      font-weight: 600;
+    }
+  }
+  &__profession {
+    color: #fff;
+    font-weight: 600;
+    margin: 6px 0;
+  }
+  &__networks {
+    display: flex;
+    .fab {
+      color: #fff;
+      font-size: 17px;
+      margin: 0 3px;
+      cursor: pointer;
+    }
+  }
+}

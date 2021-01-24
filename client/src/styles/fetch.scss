@@ -1,0 +1,178 @@
+.view-users {
+  margin: 70px 0;
+}
+
+//USERS
+.cards-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  &__title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: $background;
+    text-shadow: $shadow_3d;
+  }
+  .card-user {
+    margin: 20px;
+    min-width: 400px;
+    min-height: 480px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: $shadow_card;
+    position: relative;
+    &__header {
+      width: 100%;
+      height: 35%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &__border-image {
+      width: 120px;
+      height: 120px;
+      border-radius: 100%;
+      position: absolute;
+      top: 25%;
+      left: 140px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #fff;
+      .photo {
+        width: 90%;
+        height: 90%;
+        border-radius: 100%;
+      }
+    }
+    &__name {
+      position: relative;
+      top: 15%;
+      text-align: center;
+      font-weight: 700;
+      color: grey;
+    }
+    &__phone {
+      position: relative;
+      top: 16%;
+      text-align: center;
+      .number {
+        margin-left: 6px;
+        position: relative;
+        bottom: 1px;
+      }
+    }
+    &__social-networks {
+      position: relative;
+      top: 18%;
+      display: flex;
+      justify-content: center;
+      padding-left: 40px;
+      .social-cont {
+        width: 45px;
+        height: 45px;
+        position: relative;
+        border-radius: 100%;
+        background-color: #f2f2f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #000;
+        transition: 0.4s all;
+        cursor: pointer;
+        &:hover {
+          background-color: #000;
+          .fab {
+            color: $light_icon;
+          }
+        }
+
+        .fab {
+          color: $dark_icon;
+          transition: 0.4s all;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+.select-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  &__select {
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 20px 0;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+//Listado de letras
+.letters-table {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  .table {
+    width: 500px;
+    &__header {
+      width: 100%;
+      display: flex;
+      height: 40px;
+      background-color: $background;
+      align-items: center;
+      border-radius: 3px 3px 0 0;
+      &__column {
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        font-weight: 600;
+      }
+    }
+    &__body {
+      width: 100%;
+      border-radius:0 0 3px 3px;
+      overflow: hidden;
+
+      &__row {
+        width: 100%;
+        text-align: center;
+        background: #ccc;
+        display: flex;
+        height: 35px;
+
+        &__item {
+          width: 50%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .bold{
+          font-weight: 600;
+        }
+      }
+      .dark {
+        background-color: rgb(231, 231, 231);
+      }
+      .light {
+        background-color: #f2f2f2;
+      }
+      .higher{
+        background-color: $background;
+        color: #fff;
+      }
+    }
+  }
+}
